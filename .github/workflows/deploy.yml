@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           submodules: recursive
           fetch-depth: 0
@@ -27,10 +27,10 @@ jobs:
           extended: true
 
       - name: Build
-        run: make build
+        run: just build
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: github-pages
           path: ./public
@@ -44,7 +44,7 @@ jobs:
       contents: read
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: github-pages
           path: ./public
@@ -56,4 +56,4 @@ jobs:
           aws-region: ${{ vars.AWS_REGION }}
 
       - name: Deploy
-        run: make deploy
+        run: just deploy
