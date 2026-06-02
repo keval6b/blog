@@ -1,4 +1,4 @@
-module github.com/keval6b/website
+module github.com/keval6b/blog
 
 go 1.24.4
 
