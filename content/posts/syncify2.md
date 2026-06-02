@@ -1,7 +1,7 @@
 ---
 title: "Syncify 2, Number Go Up"
 date: 2026-06-02
-draft: true
+draft: false
 description: &description New features, new tech stack.
 tags: &tags
   - self-hosting
