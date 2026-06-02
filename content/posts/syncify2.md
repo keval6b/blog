@@ -1,5 +1,5 @@
 ---
-title: "Syncify 2, Number Go Up"
+title: "Syncify 2"
 date: 2026-06-02
 draft: false
 description: &description New features, new tech stack.
